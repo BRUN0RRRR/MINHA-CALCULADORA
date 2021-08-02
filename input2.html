@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINHA CALCULADORA</title>
+    <script>
+        function mostra(){
+        var num1 = document.querySelector(".num1").value
+        var num2 = document.querySelector(".num2").value
+	    var resultado = parseInt(num1) + parseInt(num2)
+		document.querySelector(".somar").innerHTML = resultado
+      }
+	function dividir(){
+		var num1= document.querySelector(".num1").value
+		var num2 = document.querySelector(".num2").value
+		var resultado = parseInt(num1) / parseInt(num2)
+		document.querySelector(".dividir").innerHTML = resultado
+	  }
+	function multi(){
+		var num1= document.querySelector(".num1").value
+		var num2 = document.querySelector(".num2").value
+		var resultado = parseInt(num1) * parseInt(num2)
+		document.querySelector(".multi").innerHTML = resultado
+		}
+	function menos(){
+		var num1= document.querySelector(".num1").value
+		var num2 = document.querySelector(".num2").value
+		var resultado = parseInt(num1) -  parseInt(num2)
+		document.querySelector(".menos").innerHTML = resultado
+		}
+    </script>
+</head>
+<body>
+ 
+    <center>
+		<fieldset>
+		<H1>MINHA CALCULADORA</H1>
+        <form>
+			primero número <br>
+            <input type="number" class="num1" placeholder="coloque seu nome :))">
+            <br>
+			segundo número <br>
+            <input type="number" class="num2" placeholder="coloca o que quiser :))">
+            <br>
+        </form>
+            <button onclick="mostra();">Somar</button>
+			<button onclick="dividir();" >Dividir</button>
+			<button onclick="multi();" >multiplicar</button>
+			<button onclick="menos();" >menos</button> 
+			<br>
+            <br>
+			Somar
+			<p class="somar"></p>
+			Dividir <br>
+			<p class="dividir"></p>
+			Multiplicar <br>
+			<p class="multi"></p>
+			Menos <br>
+			<p class="menos"></p>
+
+            
+        
+        <br>
+	</fieldset>
+    </center>
+
+</body>
+</html>
